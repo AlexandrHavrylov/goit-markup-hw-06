@@ -148,6 +148,7 @@ a {
 
   border: 1px solid var(--modal-input);
   border-radius: 4px;
+  transition: border-color 250ms var(--bazier);
 }
 
 .modal-input:focus {
@@ -159,7 +160,8 @@ a {
   position: absolute;
   top: 50%;
   left: 12px;
-  fill: (var(--primary-text-color));
+  fill: var(--primary-text-color);
+  transition: fill 250ms var(--bazier);
 }
 
 .modal-input:focus + .input-icon {
@@ -233,7 +235,7 @@ a {
   background: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: background-color 250ms var(--bazier);
+  transition: color 250ms var(--bazier);
   color: #000000;
 }
 
