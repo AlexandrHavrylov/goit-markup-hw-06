@@ -348,6 +348,77 @@ a {
   fill: currentColor;
 }
 
+/* РАССЫЛКА */
+.mailing-container {
+  margin-left: 93px;
+}
+
+.mailing-text {
+  margin: 0;
+  padding: 0;
+
+  color: var(--white-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.mailing-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mailing-label {
+  display: inline-block;
+}
+
+.mailing-input {
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+
+  background-color: var(--third-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.subscribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  width: 200px;
+  height: 50px;
+
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.send-icon {
+  margin-left: 10px;
+
+  fill: currentColor;
+}
+
 /* !!!!!!!!!!!!СТУДИЯ!!!!!!!!!!! */
 .sections-title {
   font-weight: 700;
