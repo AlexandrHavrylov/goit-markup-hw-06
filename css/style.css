@@ -187,7 +187,22 @@ a {
   margin-top: 20px;
 }
 
+.chekbox-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .checkbox-label {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,6 +222,27 @@ a {
   text-decoration: underline;
 }
 
+.check-icon,
+.uncheck-icon {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  transition: opacity 250ms var(--bazier);
+}
+
+.check-icon {
+  opacity: 0;
+}
+
+.chekbox-input:checked ~ .check-icon {
+  opacity: 1;
+}
+
+.chekbox-input:checked ~ .uncheck-icon {
+  opacity: 0;
+}
+
 .modal-btn {
   display: block;
   margin-top: 30px;
@@ -221,6 +257,12 @@ a {
   border-radius: 4px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms var(--bazier);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #188ce8;
 }
 
 .close-btn {
